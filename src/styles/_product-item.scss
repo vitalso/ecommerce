@@ -1,0 +1,124 @@
+.product-item {
+  position: relative;
+  padding: 15px 20px;
+  //border-color: $product-border-color;
+  border-radius: 12px;
+  font-size: 13px;
+
+  a {
+    text-align: center;
+    color: $dark;
+    text-decoration: none;
+    span {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: block;
+      text-align: left;
+      //max-height: 55px;
+    }
+
+  }
+
+  .price-before {
+    color: $border-color;
+  }
+
+  .current-price {
+    color: $red-color;
+  }
+
+  .add-to-favorite {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+    background: $white;
+    padding: 5px;
+    border-radius: 8px;
+      svg {
+        width: 25px;
+        height: 22px;
+      }
+      &:hover {
+        background: rgba($primary-color , .1);
+      }
+  }
+
+  &.large-product {
+    padding: 90px 48px 32px 48px;
+    font-size: 18px;
+    line-height: 22px;
+
+      a {
+        span {
+          margin-top: 80px;
+          margin-bottom: 30px;
+          min-height: auto;
+          max-height: auto;
+        }
+      }
+
+      .current-price {
+        font-size: 36px;
+        line-height: 44px;
+      }
+
+      .add-to-favorite {
+        top: 25px;
+        right: 25px;
+        svg {
+          width: 30px;
+          height: 27px;
+        }
+      }
+
+  }
+
+  &.add-height {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+      a {
+        span {
+          min-height: 33px;
+          margin-bottom: 15px;
+          overflow: hidden;
+        }
+      }
+
+  }
+
+  &.waited {
+    font-size: 14px;
+
+    .current-price {
+      font-size: 18px;
+    }
+
+    &.add-height {
+      a {
+        span {
+          min-height: auto;
+        }
+      }
+    }
+
+  }
+
+}
+
+.product-cover {
+  height: 40vw;
+  max-height: 300px;
+  min-height: 200px;
+  font-size: 18px;
+  background: url(../images/product-cover.png) no-repeat;
+  background-size: cover;
+
+  a.btn {
+    position: absolute;
+    bottom: 40px;
+    left: 27%;
+  }
+
+}

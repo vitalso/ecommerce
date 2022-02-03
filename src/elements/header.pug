@@ -1,0 +1,52 @@
+header
+  // Top bar
+  .top-bar.d-none.d-md-block
+    .container-fluid
+      p.mb-0 ТОТАЛЬНИЙ РОЗПРОДАЖ ДО -50%
+
+  .header-container
+    .container
+      .row.align-items-center
+
+        .col-lg-3.col-md-3.col-sm-1.col-1.d-flex
+          button.toggle-nav
+            span
+            span
+            span
+
+          .logo.d-none.d-md-block
+            a(href="index.html"): img(src="images/logo.svg" , alt="logo")
+
+        .col-lg-9.col-md-9.col-sm-11.col-11.d-flex.justify-content-between.align-items-center
+          a(href="#").btn.btn-primary.catalog-link.d-none.d-lg-block
+            svg
+              use(xlink:href="images/sprite.svg#icon-catalog")
+            span Каталог
+
+          .header-search
+            form
+              .form-group.position-relative
+                span.search-icon
+                  svg
+                    use(xlink:href="images/sprite.svg#icon-search")
+                input(type="text" , placeholder="Я шукаю...")
+                button(type="submit").btn.btn-primary Знайти
+                span.mic-icon
+                  svg
+                    use(xlink:href="images/sprite.svg#icon-mic")
+
+          ul.nav.header-nav.align-items-center
+            li.nav-item.mb-0.d-none.d-md-block
+              .tarrif.text-white.text-center
+                p.mb-0 Спробуйте
+                a(href="#").badge.bg-primary.rounded-pill.text-decoration-none PREMIUM
+            li.nav-item.mx-4.mb-0.d-none.d-md-block
+              a(href="#")
+                svg
+                  use(xlink:href="images/sprite.svg#icon-user")
+            li.nav-item.position-relative.mb-0
+              a(href="#")
+                svg
+                  use(xlink:href="images/sprite.svg#icon-basket")
+                span.position-absolute.top-0.start-100.translate-middle.badge.rounded-pill.bg-primary 2
+

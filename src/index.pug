@@ -1,0 +1,491 @@
+﻿doctype html
+html(lang='en')
+  head
+    include elements/head.pug
+  body
+
+    // Header start
+    include elements/header.pug
+
+    // Main page start
+    main
+
+      // Content start
+      .container
+        .row
+
+          // Left side bar
+          .col-lg-3.col-md-3.d-none.d-lg-block
+            .card.card-box.mb-3
+              ul.nav.flex-column.side-nav
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-1")
+                    span Ноутбуки та комп'ютери
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-2")
+                    span Смартфони, ТВ та електроніка
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-3")
+                    span Товари для геймерів
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-4")
+                    span Побутова техніка
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-5")
+                    span Товари для дому
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-6")
+                    span Інструменти та автотовари
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-7")
+                    span Сантехніка та ремонт
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-8")
+                    span Дача, сад та город
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-9")
+                    span Спорт та захоплення
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-10")
+                    span Одяг, взуття та прикраси
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-11")
+                    span Краса і здоров'я
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-12")
+                    span Дитячі товари
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-13")
+                    span Зоотовари
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-14")
+                    span Канцтовари та книги
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-15")
+                    span Алкогольні напої та продукти
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-16")
+                    span Товари для бізнесу та послуги
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-17")
+                    span Тури та відпочинок
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-18")
+                    span Акції
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#nav-icon-19")
+                    span Тотальний розпродаж
+
+            .card.card-box.mb-3
+              ul.nav.flex-column.side-nav
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-support")
+                    span Довідковий центр
+
+            .card.card-box.mb-3
+              h6.text-center Ласкаво просимо!
+              p.text-center.font-size-13 Увійдіть, щоб отримувати рекомендації, персональні бонуси та знижки.
+
+              a(href="#").btn.btn-primary.rounded-pill.mb-3.font-size-13 Увійдіть до особистого кабінету
+
+            .card.card-box.mb-3
+              p.font-size-13 Ми в соціальних мережах
+              ul.d-flex.justify-content-between.align-items-center.social-link.m-0.p-0
+                li
+                  a(href="#")
+                    svg
+                      use(xlink:href="images/sprite.svg#facebook")
+
+                li
+                  a(href="#")
+                    svg
+                      use(xlink:href="images/sprite.svg#twitter")
+
+                li
+                  a(href="#")
+                    svg
+                      use(xlink:href="images/sprite.svg#youtube")
+
+                li: a(href="#"): img(src="images/instagram.svg" , alt="instagram")
+
+                li
+                  a(href="#")
+                    svg
+                      use(xlink:href="images/sprite.svg#viber")
+
+                li: a(href="#"): img(src="images/telegram.svg" , alt="telegram")
+
+            .card.card-box.mb-3
+              p.mb-2.font-weight-500 Допомога
+              ul.nav.flex-column.side-nav.mb-4
+                li: a(href="#").nav-link Доставка та оплата
+                li: a(href="#").nav-link Кредит
+                li: a(href="#").nav-link Гарантія
+                li: a(href="#").nav-link Повернення товару
+                li: a(href="#").nav-link Сервісні центри
+                li: a(href="#").nav-link Відстежити замовлення
+
+              p.mb-2.font-weight-500 Інформація про компанію
+              ul.nav.flex-column.side-nav.mb-4
+                li: a(href="#").nav-link Про нас
+                li: a(href="#").nav-link Умови використання сайту
+                li: a(href="#").nav-link Вакансії
+                li: a(href="#").nav-link Контакти
+
+              p.mb-2.font-weight-500 Сервіси
+              ul.nav.flex-column.side-nav.mb-4
+                li: a(href="#").nav-link Бонусний рахунок
+                li: a(href="#").nav-link Premium
+                li: a(href="#").nav-link Подарункові сертифікати
+                li: a(href="#").nav-link Обмін
+                li: a(href="#").nav-link Rozetka Travel
+
+              p.mb-2.font-weight-500 Партнерам
+              ul.nav.flex-column.side-nav.mb-4
+                li: a(href="#").nav-link Франчайзинг
+                li: a(href="#").nav-link Продавати на Розетці
+                li: a(href="#").nav-link Співпраця з нами
+
+              hr
+
+              .d-flex.justify-content-between.align-items-center
+                img(src="images/mastercard-logo.png" , alt="mastercard-logo")
+                img(src="images/visa-logo.png" , alt="visa-logo")
+
+          // Content
+          .col-lg-9.col-md-12
+
+            // Slider
+            .wrap-slider
+              .index-slider
+                img(src="images/banner.png" , alt="banner-image")
+                img(src="images/banner.png" , alt="banner-image")
+                img(src="images/banner.png" , alt="banner-image")
+
+            a(href="#").btn.btn-primary.catalog-link.mt-4.d-md-none.d-block
+              svg
+                use(xlink:href="images/sprite.svg#icon-catalog")
+              span Каталог
+
+            .d-flex.align-items-center.justify-content-between.my-3
+              h3 Акційні пропозиції
+              a(href="#").btn.btn-light.btn-lg.ml-auto.d-none.d-sm-block Всі акції <span>1036</span>
+
+
+            .row
+              .col-lg-6.col-md-12.mb-2
+                .card.product-item.large-product
+                  a(href="#").add-to-favorite
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-favorite")
+
+                  a(href='#')
+                    img(src="images/product-1.png" , alt="product-image")
+                    span Ноутбук ASUS VivoBook S14 S435EA-HM020 (90NB0SU1-M00330) Deep Green
+                  p.text-decoration-line-through.price-before 33 999 ₴
+                  p.current-price.mb-0 30 999 ₴
+
+              .col-lg-6.ps-lg-1.pe-lg-3
+                .row.index-action(data-masonry='{"percentPosition": true }')
+                  .col-lg-6.col-sm-6.col-6
+                    .card.product-item.add-height.mb-2
+                      a(href="#").add-to-favorite
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-favorite")
+
+                      a(href='#')
+                        .product-img
+                          img(src="images/product-2.png" , alt="product-image")
+                        span Віскі Chivas Regal 1 л 12 років витримки 40% в подарунковій упаковці
+                      p.text-decoration-line-through.price-before.mb-2 1670 ₴
+                      p.current-price.mb-0 1049 ₴
+
+                  .col-lg-6.col-sm-6.col-6
+                    .card.product-item.mb-2
+                      a(href="#").add-to-favorite
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-favorite")
+
+                      a(href='#')
+                        .product-img
+                          img(src="images/product-3.png" , alt="product-image")
+                        span Ігрова консоль Microsoft Xbox Series X 1TB (RRT-00010)
+                      p.text-decoration-line-through.price-before.mb-2 22 745 ₴
+                      p.current-price.mb-0 22 195 ₴
+
+                  .col-lg-6.col-sm-6.col-6.d-none.d-md-block
+                    .card.product-item.mb-2
+                      a(href="#").add-to-favorite
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-favorite")
+
+                      a(href='#')
+                        .product-img
+                          img(src="images/product-5.png" , alt="product-image")
+                        span Електросамокат Xiaomi Mi Electric Scooter 1S Black
+                      p.text-decoration-line-through.price-before.mb-2 13 999 ₴
+                      p.current-price.mb-0 11 999 ₴
+
+                  .col-lg-6.col-sm-6.col-6.d-none.d-md-block
+                    .card.product-item.add-height.mb-2
+                      a(href="#").add-to-favorite
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-favorite")
+
+                      a(href='#')
+                        .product-img
+                          img(src="images/product-4.png" , alt="product-image")
+                        span Мобільний телефон Apple iPhone 12 mini 128 GB White Офіційна гарантія
+                      p.text-decoration-line-through.price-before.mb-2 23 999 ₴
+                      p.current-price.mb-0 21 999 ₴
+
+                  .col-lg-6
+                    a(href="#").btn.card.text-decoration-none.show-more.font-size-13 Показати ще
+
+            div.mt-5
+              h3 Зараз шукають
+
+              .row
+                .col-lg-3.col-sm-6.col-6
+                  .card.product-item.add-height.mb-2
+                    a(href="#").add-to-favorite
+                      svg
+                        use(xlink:href="images/sprite.svg#icon-favorite")
+
+                    a(href='#')
+                      .product-img
+                        img(src="images/product-6.png" , alt="product-image")
+                      span Телефон Apple iPhone 13 Pro Max 256 GB Sierra Blue
+                    p.text-decoration-line-through.price-before.mb-2 47 499 ₴
+                    p.current-price.mb-0 46 499 ₴
+
+                .col-lg-3.col-sm-6.col-6
+                  .card.product-item.add-height.mb-2
+                    a(href="#").add-to-favorite
+                      svg
+                        use(xlink:href="images/sprite.svg#icon-favorite")
+
+                    a(href='#')
+                      .product-img
+                        img(src="images/product-7.png" , alt="product-image")
+                      span Ігрова приставка PS5 PlayStation 5 Digital Edition
+                    p.text-decoration-line-through.price-before.mb-2 &#8203;
+                    p.current-price.mb-0 17 899 ₴
+
+                .col-lg-3.col-sm-6.col-6.d-none.d-md-block
+                  .card.product-item.add-height.mb-2
+                    a(href="#").add-to-favorite
+                      svg
+                        use(xlink:href="images/sprite.svg#icon-favorite")
+
+                    a(href='#')
+                      .product-img
+                        img(src="images/product-8.png" , alt="product-image")
+                      span Кавомашина PHILIPS Series 2200 EP2235/40
+                    p.text-decoration-line-through.price-before.mb-2 17 999 ₴
+                    p.current-price.mb-0 17 499 ₴
+
+                .col-lg-3.col-sm-6.col-6.d-none.d-md-block
+                  .card.product-item.add-height.mb-2
+                    a(href="#").add-to-favorite
+                      svg
+                        use(xlink:href="images/sprite.svg#icon-favorite")
+
+                    a(href='#')
+                      .product-img
+                        img(src="images/product-9.png" , alt="product-image")
+                      span Фен Dyson Supersonic HD03 (фуксія)
+                    p.text-decoration-line-through.price-before.mb-2 &#8203;
+                    p.current-price.mb-0 14 490 ₴
+
+                .col-12.d-block.d-md-none
+                  a(href="#").btn.card.text-decoration-none.show-more.font-size-13 Показати ще
+
+            div.mt-5
+              h3 Кращі подарунки на Новий рік
+
+              .row
+                .col-lg-6.col-md-6.col-sm-12
+                  .card.product-item.mb-2.bg-green.text-white.d-block.product-cover
+                    .title-product.w-75
+                      p.mb-0 Добірка подарунків у розділі
+                      p Товари для краси, здоров'я і догляду за тілом
+
+                    a(href="#").btn.btn-primary.rounded-pill.font-size-13 Перейти
+
+                .col-lg-6.col-md-6.col-sm-12
+                  .card.product-item.mb-2.bg-brown.text-white.d-block.product-cover
+                    .title-product.w-75
+                      p.mb-0 Добірка подарунків у розділі
+                      p Побутова техніка
+
+                    a(href="#").btn.btn-primary.rounded-pill.font-size-13 Перейти
+
+            div.mt-5
+              h3 Рекомендації на основі ваших переглядів
+
+              .row
+                .col-lg-3.col-md-6.col-6
+                  .card.product-item.add-height.mb-2
+                    a(href="#").add-to-favorite
+                      svg
+                        use(xlink:href="images/sprite.svg#icon-favorite")
+
+                    a(href='#')
+                      .product-img
+                        img(src="images/product-10.png" , alt="product-image")
+                      span Фен ROWENTA CV9820 Ultimate Experience
+                    p.text-decoration-line-through.price-before.mb-2 9 499 ₴
+                    p.current-price.mb-0 6 999 ₴
+
+                .col-lg-3.col-md-6.col-6
+                  .card.product-item.add-height.mb-2
+                    a(href="#").add-to-favorite
+                      svg
+                        use(xlink:href="images/sprite.svg#icon-favorite")
+
+                    a(href='#')
+                      .product-img
+                        img(src="images/product-11.png" , alt="product-image")
+                      span Фен Philips серії 3000 BHD350/10
+                    p.text-decoration-line-through.price-before.mb-2 &#8203;
+                    p.current-price.mb-0 799 ₴
+
+                .col-lg-3.col-md-6.col-6.d-none.d-md-block
+                  .card.product-item.add-height.mb-2
+                    a(href="#").add-to-favorite
+                      svg
+                        use(xlink:href="images/sprite.svg#icon-favorite")
+
+                    a(href='#')
+                      .product-img
+                        img(src="images/product-12.png" , alt="product-image")
+                      span Фен PHILIPS DryCare BHD274/00 ACmotor
+                    p.text-decoration-line-through.price-before.mb-2 1 594 ₴
+                    p.current-price.mb-0 1 494 ₴
+
+                .col-lg-3.col-md-6.col-6.d-none.d-md-block
+                  .card.product-item.add-height.mb-2
+                    a(href="#").add-to-favorite
+                      svg
+                        use(xlink:href="images/sprite.svg#icon-favorite")
+
+                    a(href='#')
+                      .product-img
+                        img(src="images/product-13.png" , alt="product-image")
+                      span Фен PHILIPS 5000 series BHD530/00
+                    p.text-decoration-line-through.price-before.mb-2 &#8203;
+                    p.current-price.mb-0 1 799 ₴
+
+                .col-12.d-block.d-md-none
+                  a(href="#").btn.card.text-decoration-none.show-more.font-size-13 Показати ще
+
+            div.mt-5
+              h3 Найбільш очікуванні товари
+
+              .row
+                .col-lg-6.col-md-12
+                  .card.product-item.large-product.mb-2
+                    a(href="#").add-to-favorite
+                      svg
+                        use(xlink:href="images/sprite.svg#icon-favorite")
+
+                    a(href='#')
+                      img(src="images/product-14.png" , alt="product-image")
+                      span Ноутбук Apple MacBook Pro 16" M1 Max 1TB 2021 (MK1A3UA/A) Space Gray
+                    p.text-decoration-line-through.price-before.mb-2 136 999 ₴
+                    p.current-price.mb-0 122 999 ₴
+                    p.mt-2.mb-0.font-size-13 Очікуєтся
+
+                .col-lg-6.col-md-12.d-flex.d-lg-block.justify-content-between
+                  .card.product-item.mb-4.add-height.waited
+                    a(href="#").add-to-favorite
+                      svg
+                        use(xlink:href="images/sprite.svg#icon-favorite")
+
+                    a(href='#')
+                      .product-img
+                        img(src="images/product-15.png" , alt="product-image")
+                      span Бездротовий геймпад PlayStation 5 Dualsense Purple для PS5/PS 5 Digital Edition
+                    p.current-price.mb-0.text-dark 2 999 ₴
+                    p.mt-1.mb-0.font-size-13 Очікуєтся
+
+                  .card.product-item.mb-4.add-height.waited
+                    a(href="#").add-to-favorite
+                      svg
+                        use(xlink:href="images/sprite.svg#icon-favorite")
+
+                    a(href='#')
+                      .product-img
+                        img(src="images/product-16.png" , alt="product-image")
+                      span Планшет Apple iPad mini 2021 Wi-Fi 256 GB Space Gray (MK7T3RK/A)
+                    p.text-decoration-line-through.price-before.mb-2 25 999 ₴
+                    p.current-price.mb-0 23 999 ₴
+                    p.mt-1.mb-0.font-size-13 Очікуєтся
+
+              .text-center.my-4
+                a(href="#").btn.btn-light.btn-lg Показати ще
+
+    // Footer start
+    include elements/footer.pug
+
+    // jQuery & Bootstrap scripts
+    include elements/scripts.pug
