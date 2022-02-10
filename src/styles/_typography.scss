@@ -3,24 +3,24 @@
 h1 {
   font-size: 46px;
   line-height: 55px;
-  font-family: $font-semibold;
+  font-weight: $font-semibold;
 }
 
 h2 {
   margin-bottom: 40px;
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: $font-semibold;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: $font-medium;
 }
 
 h3 {
-  font-weight: $font-medium;
-  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: $font-semibold;
+  font-size: 24px;
   line-height: 28px;
 }
 
 h4, h5 {
-  margin-bottom: 30px;
   font-weight: $font-medium;
 }
 
@@ -55,6 +55,7 @@ h6 {
 
   h2 {
     font-size: 16px;
+    margin-bottom: 10px;
   }
 
   h3 {

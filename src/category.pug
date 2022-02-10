@@ -1,0 +1,470 @@
+doctype html
+html(lang='en')
+  head
+    include elements/head.pug
+  body
+
+    // Header start
+    include elements/header.pug
+
+    // Main page start
+    main
+
+      // Content start
+      .container-fluid
+        h2 Комп'ютери та ноутбуки
+
+        .row
+
+          // Content
+          .col-12
+
+            // Slider
+            .wrap-slider
+              .index-slider
+                img(src="images/banner.png" , alt="banner-image")
+                img(src="images/banner.png" , alt="banner-image")
+                img(src="images/banner.png" , alt="banner-image")
+
+          .col-12
+            // Company logos
+            ul.company-logos.d-flex.justify-content-between.align-items-center.ml-0.p-0
+              li: img(src="images/logos/ant-design_apple-filled.png" , alt="logo company")
+              li: img(src="images/logos/simple-icons_asus.png" , alt="logo company")
+              li: img(src="images/logos/cib_hp.png" , alt="logo company")
+              li: img(src="images/logos/simple-icons_acer.png" , alt="logo company")
+              li: img(src="images/logos/Lenovo_logo_2015.png" , alt="logo company")
+              li: img(src="images/logos/cib_samsung.png" , alt="logo company")
+              li: img(src="images/logos/cib_dell.png" , alt="logo company")
+              li: img(src="images/logos/Canon_wordmark.png" , alt="logo company")
+              li: img(src="images/logos/TPLINK_Logo_2.png" , alt="logo company")
+              li: img(src="images/logos/Logitech_logo.png" , alt="logo company")
+
+          .col-12
+            .category-wrap
+              .card.product-item
+                a(href='#').d-block.h-100
+                  .product-img
+                    img(src="images/product-6.png" , alt="product-image")
+                  span.text-center Ноутбуки
+
+              .card.product-item
+                a(href='#').d-block.h-100
+                  .product-img
+                    img(src="images/product-3.png" , alt="product-image")
+                  span.text-center Монітори
+
+              .card.product-item
+                a(href='#').d-block.h-100
+                  .product-img
+                    img(src="images/product-5.png" , alt="product-image")
+                  span.text-center Gaming
+
+              .card.product-item
+                a(href='#').d-block.h-100
+                  .product-img
+                    img(src="images/product-4.png" , alt="product-image")
+                  span.text-center Акустичні системи
+
+              .card.product-item
+                a(href='#').d-block.h-100
+                  .product-img
+                    img(src="images/product-15.png" , alt="product-image")
+                  span.text-center Компютери, неттопи, моноблоки
+
+              .card.product-item
+                a(href='#').d-block.h-100
+                  .product-img
+                    img(src="images/product-11.png" , alt="product-image")
+                  span.text-center Планшети
+
+              .card.product-item
+                a(href='#').d-block.h-100
+                  .product-img
+                    img(src="images/product-8.png" , alt="product-image")
+                  span.text-center Клавіатури та миші
+
+              .card.product-item
+                a(href='#').d-block.h-100
+                  .product-img
+                    img(src="images/product-14.png" , alt="product-image")
+                  span.text-center Мережеве обладнання
+
+              .card.product-item
+                a(href='#').d-block.h-100
+                  .product-img
+                    img(src="images/product-13.png" , alt="product-image")
+                  span.text-center Мікрофони
+
+              .card.product-item
+                a(href='#').d-block.h-100
+                  .product-img
+                    img(src="images/product-16.png" , alt="product-image")
+                  span.text-center Навушники та аксесуари
+
+              .card.product-item
+                a(href='#').d-block.h-100
+                  .product-img
+                    img(src="images/product-19.png" , alt="product-image")
+                  span.text-center Офісна техніка
+
+              .card.product-item
+                a(href='#').d-block.h-100
+                  .product-img
+                    img(src="images/product-17.png" , alt="product-image")
+                  span.text-center Програмне забезпечення
+
+              .card.product-item
+                a(href='#').d-block.h-100
+                  .product-img
+                    img(src="images/product-12.png" , alt="product-image")
+                  span.text-center Графічні планшети
+
+              .card.product-item
+                a(href='#').d-block.h-100
+                  .product-img
+                    img(src="images/product-6.png" , alt="product-image")
+                  span.text-center Кабелі та перехідники
+
+              .card.product-item
+                a(href='#').d-block.h-100
+                  .product-img
+                    img(src="images/product-10.png" , alt="product-image")
+                  span.text-center Комп’ютерні комплектуючі
+
+              .card.product-item
+                a(href='#').d-block.h-100
+                  .product-img
+                    img(src="images/product-15.png" , alt="product-image")
+                  span.text-center Серверне обладнання
+
+              .card.product-item
+                a(href='#').d-block.h-100
+                  .product-img
+                    img(src="images/product-20.png" , alt="product-image")
+                  span.text-center Інтерактивне обладнання
+
+              .card.product-item
+                a(href='#').d-block.h-100
+                  .product-img
+                    img(src="images/product-3.png" , alt="product-image")
+                  span.text-center Аксесуари для електроніки
+
+          .col-12.mt-5.popular-products
+            h4 Популярні товари
+
+            .row
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+                  a(href="#").add-to-favorite
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-favorite")
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-6.png" , alt="product-image")
+                    span Мобільний телефон Apple iPhone 13 Pro Max 256 GB Sierra Blue
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-4.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 5 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 47 499 ₴
+                  p.current-price.mb-0 46 499 ₴
+                  p.availability.mb-0 Є в наявності
+                  a(href="#").add-to-cart
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-basket")
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+                  a(href="#").add-to-favorite
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-favorite")
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-17.png" , alt="product-image")
+                    span Навушники Defunc True Music TWS Black
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-5.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 327 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 1 299 ₴
+                  p.current-price.mb-0 799 ₴
+                  p.availability.mb-0 Є в наявності
+                  a(href="#").add-to-cart
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-basket")
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+                  a(href="#").add-to-favorite
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-favorite")
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-18.png" , alt="product-image")
+                    span Графічний планшет HiSmart WPB9622 (HS081324)
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-3.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 27 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 &#8203;
+                  p.current-price.mb-0 1 699 ₴
+                  p.availability.mb-0 Є в наявності
+                  a(href="#").add-to-cart
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-basket")
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+                  a(href="#").add-to-favorite
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-favorite")
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-19.png" , alt="product-image")
+                    span Гра FIFA 22 для ПК (PC-KEY, російська версія)
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-2.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 7 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 1 497 ₴
+                  p.current-price.mb-0 799 ₴
+                  p.availability.mb-0 Є в наявності
+                  a(href="#").add-to-cart
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-basket")
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+                  a(href="#").add-to-favorite
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-favorite")
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-20.png" , alt="product-image")
+                    span Фен Dyson Supersonic HD03 (фуксія)
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-3.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 124 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 &#8203;
+                  p.current-price.mb-0 14 490 ₴
+                  p.availability.mb-0 Є в наявності
+                  a(href="#").add-to-cart
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-basket")
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+                  a(href="#").add-to-favorite
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-favorite")
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-21.png" , alt="product-image")
+                    span Миша Apple Magic Mouse Bluetooth White
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-5.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 8 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 &#8203;
+                  p.current-price.mb-0 3 199 ₴
+                  p.availability.mb-0 Є в наявності
+                  a(href="#").add-to-cart
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-basket")
+
+          .col-12.mt-5
+            h4 Переглянуті товари
+
+            .row
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+                  a(href="#").add-to-favorite
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-favorite")
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-17.png" , alt="product-image")
+                    span Навушники Defunc True Music TWS Black
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-5.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 327 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 1 299 ₴
+                  p.current-price.mb-0 799 ₴
+                  p.availability.mb-0 Є в наявності
+                  a(href="#").add-to-cart
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-basket")
+
+          .col-12.mt-5
+            .row
+              .col-lg-3.col-md-3.mb-md-0.mb-3
+                img(src="https://via.placeholder.com/450")
+
+              .col-lg-3.col-md-3.mb-md-0.mb-3
+                img(src="https://via.placeholder.com/450")
+
+              .col-lg-3.col-md-3.mb-md-0.mb-3
+                img(src="https://via.placeholder.com/450")
+
+              .col-lg-3.col-md-3.mb-md-0.mb-3
+                img(src="https://via.placeholder.com/450")
+
+          .col-12.mt-5
+            h3 Що вибрати – персональний комп'ютер або ноутбук?
+
+            p Незамінними помічниками в повсякденному житті стали персональні комп'ютери і ноутбуки, без яких вже неможливо уявити ні роботу, ні навчання, ні розваги. Сьогодні вони є практично в кожному будинку і офісі – це сучасний засіб зв'язку і спілкування, інструмент для пошуку, обробки та зберігання інформації, а також відмінний спосіб проведення вільного часу. Кожен з пристроїв має свої плюси, які зумовили заслужену популярність.
+
+            p Стаціонарні ПК знайшли широке застосування в першу чергу там, де важливий потужний обчислювальний функціонал, забезпечення документообігу та робота з «важкою» графікою. Звичайні та «середньопотужні» пристрої ідеальні для тих, хто інтенсивно працює з браузерами. Найбільш серйозні моделі призначені для відеомонтажу, рендерінга, компіляції масивних програм і складних математичних розрахунків. Безліч варіацій комп'ютерної техніки під конкретні завдання випускають знамениті бренди, серед яких HP, Intel, Lenovo, Dell і навіть Apple.
+
+            p У свою чергу ноутбуки заслужили любов користувачів компактними розмірами і практичністю. Корпус мобільних комп'ютерів об'єднує системний блок, екран і клавіатуру, а також тачпад, вигідно відрізняючись при цьому невеликими габаритами і вагою. Такі пристрої, спеціально створені для успішної автономної роботи, дуже зручно носити з собою і комфортно вирішувати щоденні завдання. Великий вибір моделей, як бюджетного варіанту, так і преміум-класу запропонований багатьма відомими виробниками:
+
+            p.mb-5 Acer, Asus, HP, Apple, Lenovo, Dell, Xiaomi, Panasonic та іншими.
+
+            h3 Комп'ютери та ноутбуки на ROZETKA
+
+            p В інтернет-магазині широко представлені і комп'ютери, і ноутбуки на будь-який смак. Ознайомившись з усім асортиментом, можна без зусиль знайти ідеальне рішення для роботи, навчання, розваг. Модельний ряд відрізняється величезним розмаїттям – від надпотужних пристроїв з підтримкою графічних програм до компактних нетбуків і просунутих ігрових моделей. Крім безпосередньо цифрової техніки, на сайті є всі необхідні супутні товари. Для зручності пошуку розділ чітко структурований, дозволяючи з легкістю орієнтуватися в каталозі. Виділено наступні категорії та підкатегорії:
+
+            p комп'ютери – можна вибрати як звичайний десктоп, що відноситься до стаціонарних ПК, так і моноблок (в одному корпусі об'єднані системний блок з екраном), PC stick (Одноплатний пристрій в невеликому подовженому корпусі, схожому на модем або велику флешку), неттоп (моделі невеликих розмірів , призначені для нескладних завдань);
+
+            p ноутбуки – в асортименті є всілякі пристрої, в тому числі, бюджетні та іміджеві, середнього класу і бізнес-ноутбуки, ігрові, мультимедійні та дескноути (не громіздка техніка, здатна замінити повноцінний стаціонарний комп'ютер), з глянцевим і матовим покриттям екрану, з потужною батареєю , з підсвічуванням клавіатури та іншими сучасними особливостями;
+
+            p планшети – від скромних гаджетів з діагоналлю менше 8 дюймів до значних 11-дюймових і більше, з різними функціями, типом матриці, операційною системою і можливостями;
+
+            p монітори – запропоновані великі моделі і поменше, для бізнесу, портативні, геймерські, для роботи з кольором, з матовим і глянцевим покриттям, з вбудованою веб-камерою, колонками. А також із зігнутим і поворотним екраном, підтримкою 3D та іншими можливостями;
+
+            p Gaming (геймінг) – велика категорія товарів для геймерів, до якої відносяться спеціальні ігрові комп'ютери і ноутбуки, монітори, консолі, комплектуючі для ігрових комп'ютерів, а також атрибутика і сувеніри; комплектуючі для ПК – величезний вибір клавіатур, мишок, відеокарт і звукових карт, жорстких дисків, материнських плат, процесорів і блоків живлення, крім цього можна підібрати корпус для ПК, додати йому оперативної пам'яті, полегшити роботу системою охолодження або, наприклад, доповнити акустичною системою;
+
+            p мережеве обладнання – дана категорія складається з маршрутизаторів, мережевих адаптерів і сховищ, бездротових точок доступу, антен, кабелів та іншого спеціалізованого обладнання; аксесуари для ноутбуків і ПК – серед них представлені різноманітні сумки, рюкзаки, чохли, захисні плівки та вінілові наклейки. А також мікрофони, підставки і столики, чистячі засоби; аксесуари для планшетів – цю категорію формують накладки, книжки та обкладинки, чохли і футляри, клавіатури, а також бампери (новомодні захисні рамки з силікону);
+
+            p офісна техніка – від сканерів і копіювальних апаратів, принтерів і факсів до ламінаторів та біндерів, оригінальних витратних і 3D-пристроїв, що дозволяють створювати ефект об'ємного зображення; ліцензійне ПЗ – як сервісне так і для мобільних пристроїв. Операційні системи, офісні додатки, архіватори, антивіруси та системні утиліти, навчальні програми та багато інших;
+
+            p серверне обладнання – пропонуються класичні сервери, маршрутизатори SMB і комутатори SMB, процесори, контролери та мережеві карти, блоки живлення, материнські плати та інші види поширеного обладнання. На ROZETKA знайдеться все, тому з вибором необхідних гаджетів і пристроїв не виникне складнощів. На сторінках товарів надана детальна інформація для детального ознайомлення. Якщо виникнуть питання, кваліфіковані консультанти call-центру завжди готові уточнити цікавлячі деталі та допомогти з вибором. Доставка здійснюється у всі регіони України популярними службами, гарантуючи максимально комфортні покупки.
+
+
+    // Footer start
+    include elements/footer.pug
+
+    // jQuery & Bootstrap scripts
+    include elements/scripts.pug
