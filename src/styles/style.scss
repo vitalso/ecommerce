@@ -8,6 +8,7 @@
 @import '_side-nav.scss';
 @import '_hero-section.scss';
 @import '_product-item.scss';
+@import '_form.scss';
 @import '_footer.scss';
 
 * {
@@ -150,6 +151,17 @@ main {
 .container-fluid {
 	padding-left: 50px;
 	padding-right: 50px;
+}
+
+// Popup style
+.white-popup {
+  position: relative;
+  background: $bg;
+  padding: 30px;
+  width: auto;
+  max-width: 670px;
+  margin: 20px auto;
+  border-radius: 15px;
 }
 
 @media screen and (min-width: 1400px) {
