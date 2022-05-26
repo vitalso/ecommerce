@@ -1,0 +1,38 @@
+// Breadcrumbs
+.breadcrumbs {
+    margin-bottom: 35px;
+    li {
+        position: relative;
+        margin-right: 23px;
+        margin-bottom: 0;
+        
+        &:first-child {
+            svg {
+               width: 18px;
+               height: 18px; 
+            }
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            top: 50%;
+            right: -18px;
+            transform: translateY(-50%);
+            background: url(../images/icon-arrow-right.svg) no-repeat;
+        }
+
+        &:last-child {
+            &:after {
+                display: none;
+            }
+        }
+    }
+    a {
+        font-size: 12px;
+        text-decoration: none;
+        color: $dark-primary;
+    }
+}

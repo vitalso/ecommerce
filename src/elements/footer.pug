@@ -2,9 +2,14 @@ footer
   .footer-app.text-center.text-md-start
     .container
       .align-items-center.d-flex.justify-content-center.flex-column.flex-md-row
-        h2.me-md-5.mb-0 ЗАВАНТАЖУЙТЕ НАШІ ДОДАТКИ
+        h3.me-md-5.mb-0.text-uppercase Будьте в курсі вигідних пропозицій!
 
-        div.mt-md-0.mt-4
+        .subscribe-form
+          form(action="").d-block.d-sm-flex
+            input(type="email" name="email" placeholder="Ел.пошта").rounded-pill.me-4
+            button(type="submit").btn.btn-primary.text-dark.rounded-pill Підписатися
+
+        div.mt-md-0.mt-4.d-none
           a(href="#").me-4: img(src="images/button-google-play-ua.png" , alt="google-play")
           a(href="#"): img(src="images/button-appstore-ua.png" , alt="app-store")
 

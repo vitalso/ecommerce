@@ -1,0 +1,949 @@
+doctype html
+html(lang='en')
+  head
+    include elements/head.pug
+  body
+
+    // Header start
+    include elements/header.pug
+
+    // Main page start
+    main
+
+      // Content start
+      .container-fluid
+        .row
+          .col-lg-12 
+            ul.breadcrumbs.ms-0.p-0.d-flex.align-items-center
+              li
+                a(href="#")
+                  svg
+                    use(xlink:href="images/sprite.svg#icon-home")
+              li: a(href="#") Комп’ютери та ноутбуки
+              li: a(href="#") Ноутбуки
+              li: a(href="#") Ноутбуки Apple
+
+        .row 
+          .col-lg-12
+            h2.product-title Ноутбук Lenovo V15-ADA (82C700DPRA) Iron Grey
+            p.product-code Код: 245161939
+
+        .row
+          .col-lg-11
+            ul#product-tab.nav.nav-pills(role="tablist")
+              li.nav-item.mb-0(role="presentation")
+                button.nav-link.px-0.active#1-tab(data-bs-toggle="pill" data-bs-target="#tab-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true") Усе про товар
+              
+              li.nav-item.mb-0(role="presentation")
+                button.nav-link.px-0#2-tab(data-bs-toggle="pill" data-bs-target="#tab-2" type="button" role="tab" aria-controls="pills-2" aria-selected="true") Характеристики
+
+              li.nav-item.mb-0(role="presentation")
+                button.nav-link.px-0#3-tab(data-bs-toggle="pill" data-bs-target="#tab-3" type="button" role="tab" aria-controls="pills-3" aria-selected="true") Відгуки
+
+              li.nav-item.mb-0(role="presentation")
+                button.nav-link.px-0#4-tab(data-bs-toggle="pill" data-bs-target="#tab-4" type="button" role="tab" aria-controls="pills-4" aria-selected="true") Питання
+
+              li.nav-item.mb-0(role="presentation")
+                button.nav-link.px-0#5-tab(data-bs-toggle="pill" data-bs-target="#tab-5" type="button" role="tab" aria-controls="pills-5" aria-selected="true") Відео
+
+              li.nav-item.mb-0(role="presentation")
+                button.nav-link.px-0#6-tab(data-bs-toggle="pill" data-bs-target="#tab-6" type="button" role="tab" aria-controls="pills-6" aria-selected="true") Фото
+
+              li.nav-item.mb-0(role="presentation")
+                button.nav-link.px-0#7-tab(data-bs-toggle="pill" data-bs-target="#tab-7" type="button" role="tab" aria-controls="pills-7" aria-selected="true") Купують разом
+          
+          .col-lg-1
+            .product-saler
+              p.mb-0
+                span.me-3 Продавець:
+                img(src="images/product-cart/saler.png", alt="")
+
+          .col-xl-6
+            .product-overview
+              #product-tabContent.tab-content
+                .tab-pane.fade.show.active#tab-1(role="tabpanel" aria-labelledby="1-tab")
+                  
+                  .product-image.d-flex.flex-column-reverse.flex-sm-row
+                    .product-thumbnail-image
+                      a(href="#").product-wrap-img.bg-white.d-block.text-center: img(src="images/product-cart/thumbnail-1.png", alt="")
+                      a(href="#").product-wrap-img.bg-white.d-block.text-center: img(src="images/product-cart/thumbnail-2.png", alt="")
+                      a(href="#").product-wrap-img.bg-white.d-block.text-center: img(src="images/product-cart/thumbnail-3.png", alt="")
+                      a(href="#").product-wrap-img.bg-white.d-block.text-center: img(src="images/product-cart/thumbnail-4.png", alt="")
+                      a(href="#").product-wrap-img.bg-white.d-block.text-center: img(src="images/icon-play.svg", alt="")
+                    
+                    .product-cover-image.bg-white.text-center
+                      img(src="images/product-cart/product-img.png", alt="")
+
+                  .product-desc.bg-white.mb-3
+                    h4 Основні характеристики:
+
+                    .d-flex.justify-content-between
+                      ul.mb-1.p-0
+                        li.d-flex.justify-content-between <span class="d-inline-block bg-white">Діагональ екрану</span> <span class="d-inline-block bg-white">13.3</span>
+                        li.d-flex.justify-content-between <span class="d-inline-block bg-white">Роздільна здатність</span> <span class="d-inline-block bg-white">2560x1600 (WQXGA)</span>
+                        li.d-flex.justify-content-between <span class="d-inline-block bg-white">Тип екрану</span> <span class="d-inline-block bg-white">IPS</span>
+                        li.d-flex.justify-content-between <span class="d-inline-block bg-white">Лінійка процесора</span> <span class="d-inline-block bg-white">Apple M1</span>
+                        li.d-flex.justify-content-between <span class="d-inline-block bg-white">Модель процесору</span> <span class="d-inline-block bg-white">Apple M1</span>
+                        li.d-flex.justify-content-between <span class="d-inline-block bg-white">Об'єм оперативної пам'яті</span> <span class="d-inline-block bg-white">RAM 8</span>
+
+                      img(src="images/product-cart/desc-img.png", alt="")
+
+                    a(href="#").btn-link.font-weight-500.text-dark.text-decoration-none Показати ще 
+
+                .tab-pane.fade#tab-2(role="tabpanel" aria-labelledby="2-tab") 2
+                .tab-pane.fade#tab-3(role="tabpanel" aria-labelledby="3-tab") 3
+                .tab-pane.fade#tab-4(role="tabpanel" aria-labelledby="4-tab") 4
+                .tab-pane.fade#tab-5(role="tabpanel" aria-labelledby="5-tab") 5
+                .tab-pane.fade#tab-6(role="tabpanel" aria-labelledby="6-tab") 6
+                .tab-pane.fade#tab-7(role="tabpanel" aria-labelledby="7-tab") 7
+
+          .col-xl-6
+            .card.mb-3
+              .product-color.d-flex.align-items-center
+                h4.mb-0.me-3 Колір:
+                ul.ms-0.mb-0.p-0.d-flex.align-items-center
+                  li: a(href="#").d-inline-block.rounded-circle.disabled
+                  li: a(href="#" style="background: #4F4F4F;").d-inline-block.rounded-circle
+
+              .d-flex.align-items-center.price-and-buy
+                p.product-price.mb-0 26 999<span>₴</span>
+                a(href="#").btn.btn-primary.rounded-pill.w-100.mh-100 Купити
+                a(href="#").btn.btn-secondary.rounded-pill.w-100.mh-100 Купити в кредит
+                a(href="#").d-inline-block.me-4.ms-3
+                  svg
+                    use(xlink:href="images/sprite.svg#icon-heart")
+                a(href="#").btn-link
+                  svg
+                    use(xlink:href="images/sprite.svg#icon-weight")
+              
+              .d-flex.align-items-center.flex-column.flex-md-row
+                span.text-primary.me-3 + 449 бонусних ₴ на рахунок у разі купівлі
+                a(href="#").info-link.me-3.my-3.my-md-0
+                  svg
+                    use(xlink:href="images/sprite.svg#icon-info")
+                img(src="images/product-cart/bonus.png", alt="")
+
+            .card.mb-3
+              .product-garanty
+                p.d-flex
+                  label(for="service-garanty").d-flex.custom-checkbox.me-3
+                    input(type="checkbox" checked)#service-garanty.d-none
+                    span
+                    |Сервіси подовження гарантії
+                  a(href="#").info-link.me-3
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-info")
+
+                p.ps-4
+                  label(for="continue-1").d-flex.custom-checkbox
+                    input(type="radio" , name="year")#continue-1.d-none
+                    span
+                    |Подовження гарантії на 1 рік
+
+                p.ps-4
+                  label(for="continue-2").d-flex.custom-checkbox
+                    input(type="radio" , name="year")#continue-2.d-none
+                    span
+                    |Подовження гарантії на 2 роки
+
+                p.d-flex
+                  label(for="remote-setting").d-flex.custom-checkbox.me-3
+                    input(type="checkbox")#remote-setting.d-none
+                    span
+                    |Дистанційне налаштування ПК
+                  a(href="#").info-link.me-3
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-info")
+
+                p.ps-4
+                  label(for="for-gamer").d-flex.custom-checkbox
+                    input(type="radio" , name="setting")#for-gamer.d-none
+                    span
+                    |Дистанційне налаштування ПК для геймерів
+
+            .card.mb-3
+              .product-delivery
+                p Доставка в: <a href="#" class="font-weight-500 ms-1 text-decoration-none">Одеса</a>
+
+                .row.justify-content-between.align-items-center.mb-4
+                  .col-sm-4.py-2.py-md-0
+                    .d-flex
+                      img(src="images/product-cart/icon-delivery.svg", alt="")
+                      div.ms-2
+                        span Самовивіз з відділень поштових операторів
+                        p.mb-0
+                          a(href="#").font-weight-500.text-decoration-none Показати на карті
+
+                  .col-sm-4.py-2.py-md-0
+                    span.font-weight-500 Відправимо 8 січня
+
+                  .col-sm-4.py-2.py-md-0
+                    span за тарифами перевізника
+
+                .row.justify-content-between.align-items-center 
+                  .col-sm-4.py-2.py-md-0
+                    .d-flex
+                      img(src="images/product-cart/icon-courer.svg", alt="")
+                      div.ms-2
+                        span Доставка кур'єром
+
+                  .col-sm-4.py-2.py-md-0
+                    span.font-weight-500 Відправимо 8 січня
+
+                  .col-sm-4.py-2.py-md-0
+                    span за тарифами перевізника
+
+            .card.mb-3
+              .d-flex.mb-4.align-items-start
+                img(src="images/product-cart/icon-wallet.svg", alt="")
+                p.ms-2.mb-0
+                  span.fw-bold Оплата. 
+                  |Оплата під час отримання товару, Картою онлайн, Google Pay, -5% знижки від ПриватБанк та Mastercard від 500 грн, Безготівковими для юридичних осіб, Покупка частинами monobank, Безготівковий для фізичних осіб, PrivatPay, Apple Pay, Кредит, Оплата частинами, Оплата карткою у відділенні
+
+              .d-flex
+                img(src="images/product-cart/icon-garanty.svg", alt="")
+                p.ms-2.mb-0
+                  span.fw-bold Гарантія.
+                  |12 місяців Обмін/повернення товару впродовж 14 днів
+
+          .col-12.mt-5.popular-products
+            h4 Також вас можуть зацікавити
+
+            .row
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-6.png" , alt="product-image")
+                    span Мобільний телефон Apple iPhone 13 Pro Max 256 GB Sierra Blue
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-4.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 5 відгуків
+
+                  p.current-price.text-body.mb-0 46 499 ₴
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-17.png" , alt="product-image")
+                    span Навушники Defunc True Music TWS Black
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-5.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 327 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 1 299 ₴
+                  p.current-price.mb-0 799 ₴
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-18.png" , alt="product-image")
+                    span Графічний планшет HiSmart WPB9622 (HS081324)
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-3.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 27 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 &#8203;
+                  p.current-price.text-body.mb-0 1 699 ₴
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-19.png" , alt="product-image")
+                    span Гра FIFA 22 для ПК (PC-KEY, російська версія)
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-2.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 7 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 1 497 ₴
+                  p.current-price.mb-0 799 ₴
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-20.png" , alt="product-image")
+                    span Фен Dyson Supersonic HD03 (фуксія)
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-3.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 124 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 &#8203;
+                  p.current-price.text-body.mb-0 14 490 ₴
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-21.png" , alt="product-image")
+                    span Миша Apple Magic Mouse Bluetooth White
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-5.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 8 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 &#8203;
+                  p.current-price.text-body.mb-0 3 199 ₴
+
+          .col-12 
+            .card.bg-transparent.my-5.p-5.group-product
+              h4 Разом дешевше
+              
+              .card.border-0.position-relative
+                .row
+                  .col-md-6.py-3
+                    a(href="#").align-items-center.d-flex.justify-content-center.text-body.text-decoration-none
+                      span.product-img: img(src="images/product-6.png", alt="")
+                      p.mb-0.ms-5
+                        |Ноутбук Lenovo V15-ADA (82C700DPRA) Iron Grey
+                        span.d-block.font-weight-500.fs-4.mt-4 26 999 ₴
+
+                  .col-md-6.py-3
+                    a(href="#").align-items-center.d-flex.justify-content-center.text-body.text-decoration-none
+                      span.product-img: img(src="images/product-21.png", alt="")
+                      p.mb-0.ms-5
+                        |Трекпад Apple Magic Trackpad Bluetooth White (MK2D3ZM/A)
+                        span.d-block.font-weight-500.fs-4.mt-4 4 999 ₴
+
+                svg.icon-plus
+                  use(xlink:href="images/sprite.svg#icon-plus")
+
+              .row.justify-content-between.align-items-center.mt-5
+                .col-md-6
+                  span.font-weight-500 Код комплекту: 8319091-245161939-313764490
+                .col-md-6.mt-3.mt-md-0.text-start.text-md-end
+                  span.font-weight-500.fs-3.me-4.align-middle 49 498 ₴
+                  a(href="#").btn.btn-primary.rounded-pill.mh-100 Купити комплект
+
+          .col-12.mt-5.popular-products
+            h4 Спонсорські товари
+
+            .row
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-6.png" , alt="product-image")
+                    span Мобільний телефон Apple iPhone 13 Pro Max 256 GB Sierra Blue
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-4.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 5 відгуків
+
+                  p.current-price.text-body.mb-0 46 499 ₴
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-17.png" , alt="product-image")
+                    span Навушники Defunc True Music TWS Black
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-5.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 327 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 1 299 ₴
+                  p.current-price.mb-0 799 ₴
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-18.png" , alt="product-image")
+                    span Графічний планшет HiSmart WPB9622 (HS081324)
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-3.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 27 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 &#8203;
+                  p.current-price.text-body.mb-0 1 699 ₴
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-19.png" , alt="product-image")
+                    span Гра FIFA 22 для ПК (PC-KEY, російська версія)
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-2.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 7 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 1 497 ₴
+                  p.current-price.mb-0 799 ₴
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-20.png" , alt="product-image")
+                    span Фен Dyson Supersonic HD03 (фуксія)
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-3.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 124 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 &#8203;
+                  p.current-price.text-body.mb-0 14 490 ₴
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-21.png" , alt="product-image")
+                    span Миша Apple Magic Mouse Bluetooth White
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-5.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 8 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 &#8203;
+                  p.current-price.text-body.mb-0 3 199 ₴
+
+          .col-lg-6
+            h3.fw-normal.mt-5 Опис
+            .card.mt-4
+              p.fs-3.text-black-50 Ноутбук Lenovo V15-ADA (82C700DPRA) Iron Grey
+
+              p
+                b.d-block.mb-1 Дисплей стандарту Full HD
+                |15.6-дюймовий дисплей із роздільною здатністю матриці 1366х768 пікселів і LED-підсвіткою забезпечує високу яскравість і чіткість зображення.
+
+              p
+                b.d-block.mb-1 Продуктивність
+                |Насолоджуйтеся улюбленими іграми та застосунками завдяки високопродуктивному процесору AMD.
+
+              p
+                b.d-block.mb-1 Підтримування графіки з високою роздільною здатністю
+                |Досягніть максимальної якості зображення, під'єднавши пристрій до телевізора або до іншого монітора, використовуючи роз'єм HDMI.
+
+              p
+                b.d-block.mb-1 Висока швидкість пересилання даних
+                |Ноутбук обладнаний USB 3.1, що дає змогу обмінюватися даними з іншими пристроями зі швидкістю, яка вдесятеро перевищує швидкість інтерфейсів USB раніших версій.
+
+              p
+                b.d-block.mb-1 Вбудована вебкамера
+                |Вбудована вебкамера забезпечує чітке відеозображення, створюючи ефект повної присутності на вебконференціях і в інтерактивних чатах
+
+          .col-lg-6
+            .d-flex.align-items-center.justify-content-between.mt-5
+              h3.mb-0.fw-normal Відгуки покупців <span class="text-black-50">27</span>
+              a(href="#").btn.btn-primary.rounded-pill Написати відгук
+
+            .card.my-3.p-0.review-item
+              .review-header.d-flex.align-items-center.justify-content-between.border-bottom
+                p.mb-0 Олег Сидоров
+                div
+                  span.text-black-50 09 січня 2022
+                  a(href="#").text-decoration-none.mx-3
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-share-review")
+                  a(href="#").text-decoration-none
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-report-review")
+
+              .review-content
+                p Продавець: <b>BAZA-R </b>
+                p Коли навантажений 100%, можна працювати майже без лагів ¯\_(ツ)_/¯ також ноут майже не гріється і не дме гарячим повітрям. Вентилятор, без навантаження вимкнений, відповідно з SSD повністю безшумний. Якість екрану дуже посередня, малі кути огляду та видно пікселі, шрифти виглядають рваними. Однак букви великі і їх добре видно. Екран не моргає (Flicker-Free). Корпус і клавіатура дуже приємні. Корпус не прогинаєтсья навіть якщо підняти відкритий ноут за кут. Поверхня дрібно-текстурна приємна в руках. Підійде для періодичної роботи, або як основний ПК з зовнішнім монітором, який при потребі можна взяти з собою
+                p
+                  b.d-block.mb-1 Переваги:
+                  |Корпус, додаткове місце під SSD
+                p
+                  b.d-block.mb-1 Недоліки:
+                  |Слабкий екран, один слот пам'яті
+
+              .review-footer.d-flex.align-items-center.justify-content-between 
+                a(href="#").text-decoration-none
+                  svg
+                    use(xlink:href="images/sprite.svg#icon-answer")
+                  span Відповісти
+                
+                div
+                  a(href="#").text-decoration-none.mx-3
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-like")
+                    span.fw-bolder 1
+                  
+                  a(href="#").text-decoration-none
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-not-like")
+                    span.fw-bolder 0
+
+            .card.my-3.p-0.review-item
+              .review-header.d-flex.align-items-center.justify-content-between.border-bottom
+                p.mb-0 Олег Сидоров
+                div
+                  span.text-black-50 09 січня 2022
+                  a(href="#").text-decoration-none.mx-3
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-share-review")
+                  a(href="#").text-decoration-none
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-report-review")
+
+              .review-content
+                p Продавець: <b>BAZA-R </b>
+                p В ноутбуці один слот пам'яті з планкою 4Gb. Є місце під SSD, але працездатність з SATA\NVME не перевіряв. Фото після заміни диску
+                p: img(src="images/product-cart/review-img.png", alt="")
+                p
+                  b.d-block.mb-1 Переваги:
+                  |Корпус, додаткове місце під SSD
+                p
+                  b.d-block.mb-1 Недоліки:
+                  |Слабкий екран, один слот пам'яті
+
+              .review-footer.d-flex.align-items-center.justify-content-between 
+                a(href="#").text-decoration-none
+                  svg
+                    use(xlink:href="images/sprite.svg#icon-answer")
+                  span Відповісти
+                
+                div
+                  a(href="#").text-decoration-none.mx-3
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-like")
+                    span.fw-bolder 1
+                  
+                  a(href="#").text-decoration-none
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-not-like")
+                    span.fw-bolder 0
+
+            .card.my-3.p-0.review-item
+              .review-header.d-flex.align-items-center.justify-content-between.border-bottom
+                p.mb-0 Олег Сидоров
+                div
+                  span.text-black-50 09 січня 2022
+                  a(href="#").text-decoration-none.mx-3
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-share-review")
+                  a(href="#").text-decoration-none
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-report-review")
+
+              .review-content
+                p Продавець: <b>BAZA-R </b>
+                p Корпус і клавіатура дуже приємні. Корпус не прогинаєтсья навіть якщо підняти відкритий ноут за кут. Поверхня дрібно-текстурна приємна в руках. Підійде для періодичної роботи, або як основний ПК з зовнішнім монітором, який при потребі можна взяти з собою
+                p
+                  b.d-block.mb-1 Переваги:
+                  |Корпус, додаткове місце під SSD
+                p
+                  b.d-block.mb-1 Недоліки:
+                  |Слабкий екран, один слот пам'яті
+
+              .review-footer.d-flex.align-items-center.justify-content-between 
+                a(href="#").text-decoration-none
+                  svg
+                    use(xlink:href="images/sprite.svg#icon-answer")
+                  span Відповісти
+                
+                div
+                  a(href="#").text-decoration-none.mx-3
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-like")
+                    span.fw-bolder 1
+                  
+                  a(href="#").text-decoration-none
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-not-like")
+                    span.fw-bolder 0
+
+            a(href="#").btn.btn-link.text-green.text-decoration-none
+              |Дивитися всі відгуки 
+              svg
+                use(xlink:href="images/sprite.svg#icon-right")
+
+          .col-12.mt-5.popular-products
+            h4 Переглянуті товари
+
+            .row
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-6.png" , alt="product-image")
+                    span Мобільний телефон Apple iPhone 13 Pro Max 256 GB Sierra Blue
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-4.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 5 відгуків
+
+                  p.current-price.text-body.mb-0 46 499 ₴
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-17.png" , alt="product-image")
+                    span Навушники Defunc True Music TWS Black
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-5.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 327 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 1 299 ₴
+                  p.current-price.mb-0 799 ₴
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-18.png" , alt="product-image")
+                    span Графічний планшет HiSmart WPB9622 (HS081324)
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-3.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 27 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 &#8203;
+                  p.current-price.text-body.mb-0 1 699 ₴
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-19.png" , alt="product-image")
+                    span Гра FIFA 22 для ПК (PC-KEY, російська версія)
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-2.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 7 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 1 497 ₴
+                  p.current-price.mb-0 799 ₴
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-20.png" , alt="product-image")
+                    span Фен Dyson Supersonic HD03 (фуксія)
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-3.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 124 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 &#8203;
+                  p.current-price.text-body.mb-0 14 490 ₴
+
+              .col-xxl-2.col-lg-4.col-md-4.col-sm-6.col-12
+                .card.product-item.add-height.mb-2
+
+                  a(href='#')
+                    .product-img
+                      img(src="images/product-21.png" , alt="product-image")
+                    span Миша Apple Magic Mouse Bluetooth White
+                  .d-flex.align-items-center.mb-3
+                    ul.m-0.p-0.product-rating.rating-5.d-flex.align-items-center
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+                      li
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-rating")
+
+                    a(href="#").ms-2 8 відгуків
+
+                  p.text-decoration-line-through.price-before.mb-2 &#8203;
+                  p.current-price.text-body.mb-0 3 199 ₴
+
+    
+    // Popup
+    include elements/popup.pug
+
+    // Footer start
+    include elements/footer.pug
+
+    // jQuery & Bootstrap scripts
+    include elements/scripts.pug

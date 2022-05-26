@@ -78,36 +78,6 @@
 
   }
 
-  label {
-    cursor: pointer;
-  }
-
-  input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
-    opacity: 0;
-
-      & + span {
-        width: 18px;
-        height: 18px;
-        margin-right: 10px;
-        display: inline-block;
-        border-radius: 50%;
-        background-color: $white;
-        border: 1px solid $primary-color;
-      }
-
-  }
-
-  input[type="checkbox"]:checked {
-    & + span {
-      background-color: $primary-color;
-      background-image: url(../images/icon-checkbox.svg);
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-  }
-
   button[type="submit"] {
     width: 100%;
     background: $primary-color;
@@ -144,6 +114,53 @@
 
 }
 
+label , .custom-checkbox , .custom-radiobutton {
+  cursor: pointer;
+
+  input[type="checkbox"] , input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    opacity: 0;
+
+      & + span {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: $white;
+        border: 1px solid $primary-color;
+      }
+
+  }
+
+  input[type="checkbox"]:checked {
+    & + span {
+      background-color: $primary-color;
+      background-image: url(../images/icon-checkbox.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
+  input[type="radio"]:checked {
+    & + span {
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 3px;
+        left: 3px;
+        background: $primary-color;
+        border-radius: 50%;
+      }
+    }
+  }
+
+}
+
 .form-show-password {
   position: absolute;
   right: 20px;
@@ -153,4 +170,36 @@
     width: 20px;
     height: 20px;
   }
+}
+
+.subscribe-form {
+  min-width: 400px;
+  flex: 0 0 33%;
+  input {
+    width: 100%;
+    max-width: 370px;
+    height: 40px;
+    padding-left: 18px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+
+  .subscribe-form {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: $extra-small) {
+
+  .subscribe-form {
+    padding: 0 20px;
+    input {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
 }

@@ -38,6 +38,10 @@
     border: none;
   }
 
+  .btn-secondary {
+    background: $dark-blue;
+  }
+
 .show-more {
   max-height: none;
   padding-top: 25px;
@@ -50,4 +54,11 @@
       border-color: $primary-color;
     }
 
+}
+
+.btn-link {
+  svg {
+    width: 16px;
+    height: 16px;
+  }
 }

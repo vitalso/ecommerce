@@ -151,13 +151,13 @@
 
   &.rating-2 {
     li:first-child svg , li:nth-child(2) svg {
-      fill: $primary-color;
+      fill: $rating-color;
     }
   }
 
   &.rating-3 {
     svg {
-      fill: $primary-color;
+      fill: $rating-color;
     }
     li:last-child svg , li:nth-child(4) svg {
       fill: $rating-default;
@@ -166,7 +166,7 @@
 
   &.rating-4 {
     svg {
-      fill: $primary-color;
+      fill: $rating-color;
     }
     li:last-child svg {
       fill: $rating-default;
@@ -175,7 +175,7 @@
 
   &.rating-5 {
     svg {
-      fill: $primary-color;
+      fill: $rating-color;
     }
   }
 

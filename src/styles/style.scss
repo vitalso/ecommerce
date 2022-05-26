@@ -9,6 +9,8 @@
 @import '_hero-section.scss';
 @import '_product-item.scss';
 @import '_form.scss';
+@import '_breadcrumbs.scss';
+@import '_product-cart.scss';
 @import '_footer.scss';
 
 * {
@@ -71,6 +73,7 @@ a:focus , input:focus , textarea:focus {
 }
 html {
 	height: 100%;
+	overflow-x: hidden;
 }
 *, *:before, *:after {
 	-moz-box-sizing: border-box;

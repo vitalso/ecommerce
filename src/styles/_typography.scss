@@ -50,6 +50,14 @@ h6 {
   font-weight: $font-medium;
 }
 
+.text-primary {
+  color: $primary-color !important;
+}
+
+.text-green {
+  color: $primary-color;
+}
+
 
 @media screen and (max-width: $mobile) {
 

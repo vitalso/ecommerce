@@ -10,7 +10,7 @@
 }
 
 header {
-  background: $dark-secondary;
+  background: $dark-blue;
 
   .toggle-nav {
     width: 18px;
@@ -58,11 +58,13 @@ header {
 
 .catalog-link {
   border-radius: 43px;
+  color: $dark;
   svg {
     width: 20px;
     height: 20px;
     margin-right: 11px;
     vertical-align: text-bottom;
+    fill: $dark;
   }
 }
 
