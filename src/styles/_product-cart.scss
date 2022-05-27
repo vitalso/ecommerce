@@ -43,7 +43,8 @@ h2.product-title {
     width: 125px;
     margin-right: 20px;
     a {
-        height: 87px;
+        //height: 87px;
+        padding: 5px;
         line-height: 87px;
         margin-bottom: 25px;
             &:last-child {
@@ -62,6 +63,9 @@ h2.product-title {
     padding: 50px;
     border: 1px solid rgba($border-color , .5);
     border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .product-desc {
@@ -174,7 +178,7 @@ h2.product-title {
 }
 
 .product-price {
-    margin-right: 50px;
+    margin-right: 30px;
     font-size: 48px;
     flex: 1 0 auto;
     span {
@@ -227,10 +231,41 @@ h2.product-title {
     transform: translate(-50% , -50%);
 }
 
+.product-landing-desc {
+    flex-wrap: wrap;
+
+    .desc-item {
+        flex: 0 0 20%;
+        margin-bottom: 70px;
+        b {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        p {
+            margin: 20px 0 0 0;
+        }
+    }
+
+}
+
+.box-desc {
+    .col-md-6 {
+        .card {
+            max-height: 440px;
+        }
+    }
+}
+
 @media screen and (max-width: $tablet) {
 
     .product-saler {
         text-align: left;
+    }
+
+    .product-landing-desc {
+        .desc-item {
+            flex: 0 0 30%;
+        }
     }
     
 }
@@ -265,6 +300,14 @@ h2.product-title {
         margin-top: 20px;
         a {
             width: 100px;
+            max-height: 87px;
+            padding: 0 10px;
+        }
+    }
+
+    .product-landing-desc {
+        .desc-item {
+            flex: 0 0 50%;
         }
     }
 
