@@ -58,6 +58,9 @@ h6 {
   color: $primary-color;
 }
 
+.text-info {
+  color: $link-color !important;
+}
 
 @media screen and (max-width: $mobile) {
 

@@ -1,0 +1,83 @@
+// Account
+.account-card {
+    margin: 17px 24px;
+    padding:  16px 12px;
+    border-radius: 15px;
+    background: rgba($primary-color , .15);
+
+    .account-img {
+        margin-right: 15px;
+        max-width: 37px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    span {
+        font-size: 17px;
+        font-weight: $font-medium;
+    }
+
+}
+
+.account-nav {
+    padding-left: 40px;
+    padding-right: 40px;
+    a {
+        font-size: 16px;
+        color: $dark;
+    }
+    svg {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+}
+
+.status-order {
+    flex: 0 0 30%;
+    border-left: 4px solid $dark;
+
+    &.in-progress {
+        border-color: $orange-color;
+    }
+    
+    &.completed {
+        border-color: $primary-color;
+    }
+
+}
+
+.history-order {
+    svg {
+        width: 25px;
+        height: 25px;
+        margin-right: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .status-order {
+        flex: 0 0 100%;
+    }
+
+    #product-tabContent {
+        .accordion-button {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .mx-auto {
+                margin: 30px 0 !important;
+            }
+
+            &:after {
+                transform: translateY(-50%);
+                position: absolute;
+                top: 50%;
+                right: 0;
+            }
+
+        }
+    }
+
+}

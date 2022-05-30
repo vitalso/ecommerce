@@ -1,0 +1,174 @@
+doctype html
+html(lang='en')
+  head
+    include elements/head.pug
+  body
+
+    // Header start
+    include elements/header.pug
+
+    // Main page start
+    main
+
+      // Content start
+      .container-fluid
+        .row
+
+          // Left side bar
+          .col-xxl-3.col-lg-4
+            .card.mb-3.p-0
+              .account-card.d-flex.align-items-center
+                .account-img: img(src="images/account/profile-img.png", alt="")
+                p.mb-0
+                  span.d-block.text-green Виктория Поманская
+                  |v1kmessage@gmail.com
+
+              hr.mt-0
+
+              ul.nav.flex-column.account-nav
+                li.nav-item
+                  a(href="category.html").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-order")
+                    span Мої замовлення
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-favorite-2")
+                    span Список бажань
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-watch")
+                    span Переглянуті товари
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-bell")
+                    span Розсилки
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-wallet")
+                    span Мій гаманець
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-bonus")
+                    span Мій бонусний рахунок
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-premium")
+                    span Підписка Premium
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-review")
+                    span Мої відгуки
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-message")
+                    span Моє листування
+                    span.badge.bg-primary.rounded-circle.float-end 2
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-action")
+                    span Участь в акціях
+
+          // Content
+          .col-xxl-9.col-lg-8
+            p.fs-3 Особисті дані
+
+            .card.mb-3.py-4
+              button.btn.p-0.shadow-none.text-start.accordion-button.collapsed.bg-transparent.text-dark(type="button" data-bs-toggle="collapse" data-bs-target="#personalData" aria-expanded="false" aria-controls="personalData")
+                img(src="images/account/profile-img.png", alt="")
+                span.ms-2 Особисті дані
+              #personalData.collapse.mt-3
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum fugit distinctio tempore ullam nobis suscipit ab inventore optio ducimus, quasi dolore esse nihil, nostrum consequuntur aperiam commodi delectus in corporis?
+
+            .card.mb-3.py-4
+              button.btn.p-0.shadow-none.text-start.accordion-button.collapsed.bg-transparent.text-dark(type="button" data-bs-toggle="collapse" data-bs-target="#myOrder" aria-expanded="false" aria-controls="myOrder")
+                img(src="images/account/my-order.svg", alt="")
+                span.ms-2 Мої отримувачі замовлень
+              #myOrder.collapse.mt-3
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum fugit distinctio tempore ullam nobis suscipit ab inventore optio ducimus, quasi dolore esse nihil, nostrum consequuntur aperiam commodi delectus in corporis?
+
+            .card.mb-3.py-4
+              button.btn.p-0.shadow-none.text-start.accordion-button.collapsed.bg-transparent.text-dark(type="button" data-bs-toggle="collapse" data-bs-target="#myContact" aria-expanded="false" aria-controls="myContact")
+                img(src="images/account/my-contact.svg", alt="")
+                span.ms-2 Контакти
+              #myContact.collapse.mt-3
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum fugit distinctio tempore ullam nobis suscipit ab inventore optio ducimus, quasi dolore esse nihil, nostrum consequuntur aperiam commodi delectus in corporis?
+
+            .card.mb-3.py-4
+              button.btn.p-0.shadow-none.text-start.accordion-button.collapsed.bg-transparent.text-dark(type="button" data-bs-toggle="collapse" data-bs-target="#adressDelivery" aria-expanded="false" aria-controls="adressDelivery")
+                img(src="images/account/adress-delivery.svg", alt="")
+                span.ms-2 Адреса доставки
+              #adressDelivery.collapse.mt-3
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum fugit distinctio tempore ullam nobis suscipit ab inventore optio ducimus, quasi dolore esse nihil, nostrum consequuntur aperiam commodi delectus in corporis?
+
+            .card.mb-3.py-4
+              button.btn.p-0.shadow-none.text-start.accordion-button.collapsed.bg-transparent.text-dark(type="button" data-bs-toggle="collapse" data-bs-target="#myLogin" aria-expanded="false" aria-controls="myLogin")
+                img(src="images/account/my-login.svg", alt="")
+                span.ms-2 Логін
+              #myLogin.collapse.mt-3
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum fugit distinctio tempore ullam nobis suscipit ab inventore optio ducimus, quasi dolore esse nihil, nostrum consequuntur aperiam commodi delectus in corporis?
+
+            .card.mb-3.py-4
+              button.btn.p-0.shadow-none.text-start.accordion-button.collapsed.bg-transparent.text-dark(type="button" data-bs-toggle="collapse" data-bs-target="#myPets" aria-expanded="false" aria-controls="myPets")
+                img(src="images/account/my-pets.svg", alt="")
+                span.ms-2 Домашні тварини
+              #myPets.collapse.mt-3
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum fugit distinctio tempore ullam nobis suscipit ab inventore optio ducimus, quasi dolore esse nihil, nostrum consequuntur aperiam commodi delectus in corporis?
+
+            .card.mb-3.py-4
+              button.btn.p-0.shadow-none.text-start.accordion-button.collapsed.bg-transparent.text-dark(type="button" data-bs-toggle="collapse" data-bs-target="#myPets" aria-expanded="false" aria-controls="myPets")
+                img(src="images/account/my-info.svg", alt="")
+                span.ms-2 Додаткова інформація
+              #myPets.collapse.mt-3
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum fugit distinctio tempore ullam nobis suscipit ab inventore optio ducimus, quasi dolore esse nihil, nostrum consequuntur aperiam commodi delectus in corporis?
+
+            p.mt-4.text-black-50 Зв'язуйте обліковий запис Розетки з обліковими записами соцмереж і заходьте на сайт, як користувач Facebook або Google
+
+            div
+              a(href="#").btn.bg-white.mh-100.me-4.text-start.py-4.rounded-3.border.mb-3
+                img(src="images/icon-facebook.svg", alt="")
+                span.d-inline-block.ms-4.align-middle
+                  b Facebook
+                  br
+                  span.font-size-13 Зв'язати з соц.мережою
+
+              a(href="#").btn.bg-white.mh-100.text-start.py-4.rounded-3.border.mb-3
+                img(src="images/icon-google.svg", alt="")
+                span.d-inline-block.ms-4.align-middle
+                  b Google
+                  br
+                  span.font-size-13 Зв'язати з соц.мережою
+
+            .d-flex.justify-content-between.align-items-center.mt-3
+              a(href="#").btn.btn-link.px-0.text-decoration-none Змінити пароль
+              a(href="#").btn.btn-link.px-0.text-decoration-none Видалити аккаунт
+            
+            p: a(href="#").btn.btn-link.px-0.text-decoration-none Вихід
+
+
+    // Popup
+    include elements/popup.pug
+
+    // Footer start
+    include elements/footer.pug
+
+    // jQuery & Bootstrap scripts
+    include elements/scripts.pug

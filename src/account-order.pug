@@ -1,0 +1,248 @@
+doctype html
+html(lang='en')
+  head
+    include elements/head.pug
+  body
+
+    // Header start
+    include elements/header.pug
+
+    // Main page start
+    main
+
+      // Content start
+      .container-fluid
+        .row
+
+          // Left side bar
+          .col-xxl-3.col-lg-4
+            .card.mb-3.p-0
+              .account-card.d-flex.align-items-center
+                .account-img: img(src="images/account/profile-img.png", alt="")
+                p.mb-0
+                  span.d-block.text-green Виктория Поманская
+                  |v1kmessage@gmail.com
+
+              hr.mt-0
+
+              ul.nav.flex-column.account-nav
+                li.nav-item
+                  a(href="category.html").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-order")
+                    span Мої замовлення
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-favorite-2")
+                    span Список бажань
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-watch")
+                    span Переглянуті товари
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-bell")
+                    span Розсилки
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-wallet")
+                    span Мій гаманець
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-bonus")
+                    span Мій бонусний рахунок
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-premium")
+                    span Підписка Premium
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-review")
+                    span Мої відгуки
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-message")
+                    span Моє листування
+                    span.badge.bg-primary.rounded-circle.float-end 2
+
+                li.nav-item
+                  a(href="#").nav-link
+                    svg
+                      use(xlink:href="images/sprite.svg#icon-action")
+                    span Участь в акціях
+
+          // Content
+          .col-xxl-9.col-lg-8
+            p.fs-3 Мої замовлення
+
+            ul#product-tab.nav.nav-pills.mb-4(role="tablist")
+              li.nav-item.mb-0(role="presentation")
+                button.nav-link.px-0.active#1-tab(data-bs-toggle="pill" data-bs-target="#tab-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true") Всі замовлення
+              
+              li.nav-item.mb-0(role="presentation")
+                button.nav-link.px-0#2-tab(data-bs-toggle="pill" data-bs-target="#tab-2" type="button" role="tab" aria-controls="pills-2" aria-selected="true") Гарантія на повернення
+
+            #product-tabContent.tab-content
+              .tab-pane.fade.show.active#tab-1(role="tabpanel" aria-labelledby="1-tab")
+                .card.mb-3.py-4
+                  button.btn.p-0.shadow-none.text-start.accordion-button.collapsed.bg-transparent.text-dark.mh-100(type="button" data-bs-toggle="collapse" data-bs-target="#order-1" aria-expanded="false" aria-controls="order-1")
+                    span.status-order.in-progress.text-black-50.ps-4
+                      |№ 1 237 881 804 від 03.02.22
+                      b.d-block.text-dark Доставляється
+
+                    span.mx-auto.text-black-50
+                      |Сума замовлення
+                      b.d-block.text-dark 899₴
+
+                    img(src="images/account/order-1.png", alt="")
+
+                  #order-1.collapse.mt-3
+                    .row.px-0.py-5.p-xl-5
+                      .col-lg-4
+                        p.fw-bold Інформація про замовлення
+                        p ТТН 20400267844182
+                        p Самовивіз з Нової Пошти
+                        p.text-info.font-weight-500 Одеська обл., Овідіопольський р-н., Авангард, Відділення №1, ул. Ангарская, б.1а
+
+                        p.fw-bold.mt-5 Графік роботи:
+                        p Пн-Пт: 09:00-19:00
+                        p Сб: 09:00-18:00
+                        p Нд: 10:00-18:00
+
+                        p.fw-bold.mt-5 Поманская Виктория
+                          a(href="#").info-link.ms-2.text-decoration-none
+                            svg
+                              use(xlink:href="images/sprite.svg#icon-info")
+                        p 380930044878
+                        p v1kmessage@gmail.com
+
+                      .col-lg-4 
+                        p.fw-bold Товари Baza-R 
+                        a(href="#").d-flex.align-items-center.text-decoration-none.text-info.font-weight-500
+                          img(src="images/account/order-1.png", alt="") 
+                          span.ms-3 Клавіатура бездротова Logitech K270
+
+                      .col-lg-4
+                        table.table.text-center.mb-5.mt-5.mt-lg-0
+                          thead
+                            tr
+                              th.border-bottom-0 Ціна
+                              th.border-bottom-0 Кількість
+                              th.border-bottom-0 Сума
+                          tbody
+                            tr.border-bottom-0 
+                              td.border-bottom-0 179₴
+                              td.border-bottom-0 1
+                              td.border-bottom-0 179₴
+
+                        p.text-end
+                          b.me-3 Оплата
+                          |Під час отримання товару
+                        
+                        p.text-end
+                          b.me-3 Доставка
+                          |За тарифами перевізника
+
+                        p.text-end.fs-4 Разом <span>179₴</span>
+
+                    p.ps-0.ps-xl-5
+                      a(href="#").fs-6.text-decoration-none.text-info.history-order
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-clock")
+                        |Історія замовлення 
+
+                .card.mb-3.py-4
+                  button.btn.p-0.shadow-none.text-start.accordion-button.collapsed.bg-transparent.text-dark.mh-100(type="button" data-bs-toggle="collapse" data-bs-target="#order-2" aria-expanded="false" aria-controls="order-2")
+                    span.status-order.completed.text-black-50.ps-4
+                      |№ 727 881 804 від 03.01.22
+                      b.d-block.text-dark Виконано
+
+                    span.mx-auto.text-black-50
+                      |Сума замовлення
+                      b.d-block.text-dark 1 699₴
+
+                    img(src="images/account/order-2.png", alt="")
+
+                  #order-2.collapse.mt-3
+                    .row.px-0.py-5.p-xl-5
+                      .col-lg-4
+                        p.fw-bold Інформація про замовлення
+                        p ТТН 20400267844182
+                        p Самовивіз з Нової Пошти
+                        p.text-info.font-weight-500 Одеська обл., Овідіопольський р-н., Авангард, Відділення №1, ул. Ангарская, б.1а
+
+                        p.fw-bold.mt-5 Графік роботи:
+                        p Пн-Пт: 09:00-19:00
+                        p Сб: 09:00-18:00
+                        p Нд: 10:00-18:00
+
+                        p.fw-bold.mt-5 Поманская Виктория
+                          a(href="#").info-link.ms-2.text-decoration-none
+                            svg
+                              use(xlink:href="images/sprite.svg#icon-info")
+                        p 380930044878
+                        p v1kmessage@gmail.com
+
+                      .col-lg-4 
+                        p.fw-bold Товари Baza-R 
+                        a(href="#").d-flex.align-items-center.text-decoration-none.text-info.font-weight-500
+                          img(src="images/account/order-1.png", alt="") 
+                          span.ms-3 Клавіатура бездротова Logitech K270
+
+                      .col-lg-4
+                        table.table.text-center.mb-5.mt-5.mt-lg-0
+                          thead
+                            tr
+                              th.border-bottom-0 Ціна
+                              th.border-bottom-0 Кількість
+                              th.border-bottom-0 Сума
+                          tbody
+                            tr.border-bottom-0 
+                              td.border-bottom-0 179₴
+                              td.border-bottom-0 1
+                              td.border-bottom-0 179₴
+
+                        p.text-end
+                          b.me-3 Оплата
+                          |Під час отримання товару
+                        
+                        p.text-end
+                          b.me-3 Доставка
+                          |За тарифами перевізника
+
+                        p.text-end.fs-4 Разом <span>179₴</span>
+
+                    p.ps-0.ps-xl-5
+                      a(href="#").fs-6.text-decoration-none.text-info.history-order
+                        svg
+                          use(xlink:href="images/sprite.svg#icon-clock")
+                        |Історія замовлення
+
+
+              .tab-pane.fade#tab-2(role="tabpanel" aria-labelledby="2-tab") 2
+
+
+    // Popup
+    include elements/popup.pug
+
+    // Footer start
+    include elements/footer.pug
+
+    // jQuery & Bootstrap scripts
+    include elements/scripts.pug
